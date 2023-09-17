@@ -116,7 +116,7 @@ html, body {
     justify-content: space-evenly;
     align-items: center;
     margin: 60px auto;
-    padding: 35px;
+    padding: 20px 35px;
 }
 
 .about > .about-wrapper > .profile {
@@ -131,36 +131,45 @@ html, body {
 
 .profile > h1 {
     margin-left: 50px;
+    font-size: 40px;
 }
 
 .profile > p {
     margin:30px 50px;
 }
 
+.profile > .profile-img {
+    text-align: center;
+}
+
 .profile > .name {
-    margin-left: 80px;
+    margin: 10px 0px;
+    text-align:center;
 }
 
 .profile > h3 {
-    margin-left: 80px;
+    text-align: center;
 }
 
-.profile > .cv > a{
-    font-size: 15px;
-    margin-left: 100px;
+.profile > .cv {
+    font-size: 20x;
+    margin: 25px 0px;
+    text-align: center;
     color: black;
 }
 
-.about > .about-wrapper > .details > .personal-info {
+.about > .about-wrapper >  .details > .personal-info {
     display: flex;
     justify-content: flex-start;
 }
 
 .personal-info > .num {
     margin: 5px 0px;
+
 }
 .personal-info > .yrs {
     margin: 5px 0px;
+
     margin-left: 200px;
 }
 .personal-info > .loc {
@@ -228,7 +237,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     margin: 60px auto;
-    padding: 40px 30px;
+    padding: 60px 80px;
     background-color: black;
     color: white;
 }
@@ -241,25 +250,24 @@ html, body {
 
 .footer > .profile-exp > h4 {
     margin: 10px 0px;
-    margin-left: 50px;
+    margin-left: 0px;
+
 }
 
-.footer > .profile-exp > h1 {
+.footer > .profile-exp > .my-exper {
     margin: 20x 0px;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 
 .footer > .profile-exp > p {
-    margin: 10px 50px;
+    margin: 10px 0px;
+    margin-right: 100px;
 
 }
-
-
 
 .footer > .details {
     flex: 1;
 }
-
 
 
 .footer > .profile-exp .my-resume > a {
@@ -267,17 +275,46 @@ html, body {
     text-decoration: none;
     font-size: 15px;
     margin-top: 80px;
-    padding: 10px 15px;
-    margin-left: 80px;
+    padding: 15px 20px;
+    margin-left: 0px;
+}
+
+.footer > .details > .personal-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-info > .yrs-time {
+    margin: 10px 0px;
+}
+
+.personal-info > .place {
+
+    margin: 10px 0px;
+}
+
+.footer > .details > h2 {
+    font-size: 28px;
+    margin: 10px 0px;
+}
+
+.footer > .details > .line {
+    background-color: gray;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0px;
 }
 
 
 
 
+
+/*blog page css */
+
+
 .blog-wrapper {
     margin: 40px auto;
     padding: 35px;
-    align-items: center;
 }
 
 .blog-wrapper > h4 {
@@ -285,8 +322,8 @@ html, body {
     text-align: center;
 }
 
-.blog-wrapper > .heading {
-    margin: 0px auto;
+.blog-wrapper > .heading > h1 {
+    margin: 5px auto;
     text-align: center;
 }
 
@@ -294,14 +331,183 @@ html, body {
     display: flex;
 }
 
+.blogs-wrapper > .items {
+    margin: 30px 10px 10px 10px;
+    padding: 10px;
+}
+
+.blogs-wrapper > .items > img {
+    width: 250px;
+}
+
+.blogs-wrapper > .items > h4 {
+    margin: 5px;
+    font-size: 12px;
+}
+
+.blogs-wrapper > .items > h3 {
+    margin: 10px 0px;
+    width: 70%;
+    font-size: 18px;
+}
+
 .blogs-wrapper > .items > .line {
+    background-color:gray;
+    height: 1px;
+    width: 90%;
+}
+
+.blog-wrapper > .container > .load  {
+    text-align: center;
+    padding: 10px 25px;
     background-color: black;
-    height: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+.blog-wrapper > .container{
+    width: 100%;
+    margin: 50px 0px;
+    text-align: center;
 }
 
 
 
+/*work css */
 
 
+.work-wrapper {
+    margin: 40px ;
+    padding: 35px 40px;
+}
+
+.work-wrapper > h4 {
+    margin: 10px 0px;
+}
+
+.work-wrapper > .heading > h1 {
+    margin: 10px 0px;
+}
+
+
+.work-wrapper > .container > .load  {
+    text-align: center;
+    padding: 10px 25px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.work-wrapper > .container{
+    width: 100%;
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.work-wrapper > .products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.work-wrapper > .products > .product-container {
+    display: flex;
+    width: 50%;
+    margin: 20px 0px;
+}
+
+.work-wrapper > .products > .product-container > .text {
+    flex:1;
+    width: 35%;
+}
+.work-wrapper >  .products >
+.product-container > .img {
+    width: 65%;
+}
+
+.text > h5 {
+    margin: 5px 0px;
+}
+
+.text > h2 {
+    margin: 15px 0px;
+}
+
+
+/*testimonial */
+
+
+.testimonial {
+    margin: 20px 40px ;
+    padding: 20px 40px;
+}
+
+.testimonial > h1 {
+    text-align: center;
+    font-size: 50px;
+    align-items: center;
+}
+
+.testimonial > p {
+    text-align: center;
+    line-height: 25px;
+    margin: 20px 100px 50px 100px;
+    padding: 0px 100px;
+
+}
+
+.people-review {
+    display: flex;
+    margin: 20px;
+
+}
+
+.people-review > .review-1 {
+    display: flex;
+
+    background-color:#eaebeb;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+
+.people-review > .review-1 > .image { display: inline-block; position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; margin: 20px; } .image img { width: auto; height: 100%; margin-left: -50px;
+}
+
+
+
+.people-review > .review-1 > .content {
+    font-size: 18px;
+    text-align: justify;
+    margin: 10px 10px;
+    width: 60%;
+}
+.people-review > .review-1 > .content > h2 {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.people-review > .review-1 > .content > .div {
+    font-size: 18px;
+}
+
+.testimonial .scroll {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0px;
+
+}
+
+.scroll .line {
+    width: 40px;
+    height: 10px;
+    border-radius: 5px;
+    background-color:#eaebeb;
+    margin: 0px 8px;
+}
+
+.scroll .line:hover {
+    background-color: #fc6f01;
+}
 
 
