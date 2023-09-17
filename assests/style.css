@@ -37,9 +37,14 @@ html, body {
     margin-left: -20px;
 }
 
-.nav ul li{
+.nav ul li {
     list-style: none;
     padding: 15px 0px;
+}
+
+.nav ul li .hed {
+    text-decoration: none;
+    color: white;
 }
 
 .nav > .socials {
